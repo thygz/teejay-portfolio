@@ -1,12 +1,12 @@
 /* Variables */
 :root {
-    --main-color: #844705;
-    --blue-dark: #04070a;
+    --main-color: #873906;
+    --blue-dark: #2c2f33;
     --green: #03535c;
     --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
-    --backdrop-filter-blur: blur(10px);
+    --backdrop-filter-blur: blur(15px);
 }
 
 
@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 17px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight: 400;
     color: var(--blue-dark);
     line-height: 1.5;
@@ -151,9 +151,14 @@ img {
 
 .home-text h1 {
     font-size: 65px;
-    background: linear-gradient(to bottom, #03535c, #195688);
+    /* background: linear-gradient(to bottom, #844705, #844705);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
+    background-image: url(https://i.pinimg.com/474x/07/ee/4d/07ee4d8e183465c9904f100fed90f1ea--computer-network-vector-background.jpg);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-font-smoothing: antialiased;
     font-weight: 600;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
 }
@@ -509,7 +514,7 @@ a {
 .section-title h2 {
     font-size: 40px;
     color: var(--main-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .about-img {
@@ -712,7 +717,7 @@ button {
     left: 15px;
     right: 15px;
     bottom: 15px;
-    background: rgba(6, 109, 168, 0.1);
+    background: rgba(14, 85, 225, 0.1);
     border: 2px solid var(--white-alpha-25);
     border-radius: 15px;
     transition: 0.5s;
@@ -745,6 +750,10 @@ button {
 
 .portfolio-container .card .box .portfolio-item h3 {
     margin: 30px 0;
+}
+
+.portfolio-item h3 {
+    font-weight: 500;
 }
 
 
@@ -960,7 +969,7 @@ button {
 
 @media(max-width:575px) {
     .main {
-        width: 98%;
+        width: 99%;
     }
 
     .header .nav-inner ul li a {
@@ -968,7 +977,7 @@ button {
     }
 
     .home-text h1 {
-        font-size: 42px;
+        font-size: 44px;
     }
 
     .home-text h2 {
@@ -976,12 +985,16 @@ button {
     }
 
     .home-text .course {
-        font-size: 20px;
+        font-size: 23px;
+    }
+
+    .home-text .message {
+        font-size: 16px;
     }
 
     .about-tabs .tab-item {
-
-        font-size: 19px;
+        font-size: 20px;
+        margin: 0 15px 0 0;
     }
 
     .about-tabs {
@@ -989,16 +1002,20 @@ button {
     }
 
     .about-text .about-message {
-        font-size: 15px;
+        font-size: 16px;
     }
     
     .about-text .mission {
         font-weight: 500;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .about-text h3 {
-        font-size: 19px;
+        font-size: 20px;
+    }
+
+    .about-img .img-box {
+        max-width: 250px;  
     }
 
     .timeline-item h3 {
